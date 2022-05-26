@@ -351,6 +351,11 @@ h3 {
   padding-bottom: 4rem;
 }
 
+.body-link {
+  color: #ED6A5A;
+  text-decoration: none;
+}
+
 .cta {
   padding-top: 1rem;
   background: url("../images/cta.webp") no-repeat;
@@ -572,11 +577,13 @@ label.fcf-label {
 }
 
 #services .column img {
-  display: none;
+  padding-top: 2rem;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
   #services .column img {
+    padding-top: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -610,6 +617,10 @@ label.fcf-label {
 
 #contact .main-header {
   position: relative;
+}
+
+#contact .contact {
+  padding-top: 3rem;
 }
 
 #contact .contact a {

@@ -42,9 +42,11 @@
         }
     
         img{
-            display: none;
+            padding-top: 2rem;
+            display: block;
     
             @media screen and (min-width: 768px) {
+                padding-top:0rem ;
                 display: flex;
             }
                 
