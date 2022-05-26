@@ -1,0 +1,39 @@
+footer {
+    background-color: $dark;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: $light;
+    text-align: center;
+
+    
+
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 800px;
+    font-size: 1.2rem;
+
+    a {
+        color: $light;
+        text-decoration: none;
+        display: flex;
+
+    }
+}
+
+
+.footer-text p {
+    color: $light;
+    font-size: 0.8rem;
+
+    a {
+        color: $tertiary;
+        font-weight: $font-bold;
+        text-decoration: none;
+    }
+}

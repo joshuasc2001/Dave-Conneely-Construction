@@ -1,0 +1,69 @@
+#services{
+    .logo {
+        filter: $filter-dark;
+    }
+    
+    .main-nav {
+        a {
+            @media (min-width: 768px) {
+                color: $font-main;
+            }
+        }
+    }
+    
+    .main-header {
+        position: relative;
+    }
+    
+    .column {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 2rem;
+    
+        justify-content: center;
+        align-items: center;
+    
+    
+    
+        .title{
+        font-size: 2.5rem;
+        text-align: left;
+        }
+    
+        p{
+            text-align: left;
+        }
+    
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+    
+        img{
+            display: none;
+    
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
+                
+            
+        }
+    
+        
+    
+    }
+    
+    .col-2{
+        max-width: 500px ;
+        }
+    
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after {
+            background-color: $dark;
+        }
+    
+}
+

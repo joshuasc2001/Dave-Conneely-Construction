@@ -1,0 +1,88 @@
+#fcf-form {
+    display: block;    
+}
+
+.fcf-body {
+    margin: 0;
+    font-size: 1rem;
+    color: $font-main;
+    text-align: left;
+    background-color: $light;
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    color: $font-main;
+    background-color: $light;
+    outline: none;
+    border-radius: 0.25rem;
+}
+
+
+select.fcf-form-control[size],
+select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-btn {
+    width: 100%;
+    display: inline-block;
+    color: $font-main;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 1rem 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: $font-secondary;
+    text-decoration: none;
+}
+
+.fcf-btn:focus,
+.fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: $light;
+    background-color: $main;
+}
+
+.fcf-btn-primary:hover {
+    color: $light;
+    background-color: $tertiary;
+}

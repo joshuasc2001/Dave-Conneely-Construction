@@ -1,0 +1,17 @@
+.hero {
+
+    background: url("../images/hero.webp") no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 9em;
+    padding-bottom: 9em;
+    text-align: center;
+    
+
+    h1{
+        color: $light;
+        max-width: 800px;
+        margin-left: auto ;
+        margin-right: auto ;
+    }
+
+}

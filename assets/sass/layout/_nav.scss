@@ -1,0 +1,165 @@
+.main-nav {
+    background-color: $main;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    font-size: 1.2rem;
+    padding-top: 0.75rem;
+    padding: 0;
+
+
+
+    overflow: hidden;
+
+    transition: all ease-in-out 250ms;
+
+    z-index: 2;
+
+
+
+
+    @media (min-width: 768px) {
+        padding: 1rem;
+        max-width: 500px;
+        position: relative;
+        flex: auto;
+        background: none;
+        margin-top: 1em;
+        margin-left: 2em;
+        left: 0;
+
+    }
+
+    ul {
+
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 100vh;
+
+        @media (min-width: 768px) {
+
+            flex-direction: row;
+            height: auto;
+
+        }
+    }
+
+
+
+
+    li {
+        margin: 0;
+        flex: 1 1 auto;
+        border-bottom: 1px solid $light;
+        display: flex;
+
+        @media (min-width: 768px) {
+            display: inline;
+            border: none;
+            text-align: right;
+        }
+
+    }
+
+
+
+    a {
+        color: $light;
+        text-decoration: none;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+
+        &:hover {
+            background: $tertiary;
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            color: $light;
+            display: inline-block;
+
+            &:hover {
+                background: none;
+            }
+
+            &::after {
+                content: '';
+                width: 0px;
+                height: 2px;
+                display: block;
+                background: $tertiary;
+                transition: all ease-in 250ms;
+            }
+
+
+            &:hover::after {
+                width: 100%;
+            }
+
+
+
+        }
+    }
+
+    &.is-open {
+        left: 0;
+    }
+}
+
+
+
+/* Hamburger Menu*/
+
+.nav-toggle {
+    display: block;
+    padding: 1em;
+    position: absolute;
+    cursor: pointer;
+    right: 1em;
+    top: 1em;
+    z-index: 3;
+
+    @media (min-width: 768px) {
+
+        display: none;
+
+    }
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 3px;
+    background-color: $light;
+    border-radius: 3px;
+    transition: all ease-in-out 250ms;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.hamburger.is-open {
+    transform: rotate(45deg);
+}
+
+.hamburger.is-open::after {
+    transform: rotate(-90deg) translateX(3px);
+}
+
+.hamburger.is-open::before {
+    opacity: 0;
+}

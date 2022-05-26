@@ -1,0 +1,21 @@
+.cta {
+    padding-top: 1rem;
+    background: url("../images/cta.webp") no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    padding: 5rem;
+    padding-top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-title {
+    color: $light;
+
+    span {
+        font-weight: $font-bold;
+        color: $tertiary;
+    }
+}

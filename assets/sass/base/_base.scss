@@ -1,0 +1,68 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body{
+  color: $font-main;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.unstyled-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.icon {
+  width: 5em;
+  height: auto;
+  margin: 1rem;
+  filter: $filter-dark;
+}
+
+.logo {
+  width: 10%;
+  min-width: 3rem;
+  max-width: 3rem;
+  filter: $filter-white;
+  margin-left: 1em;
+  float: left;
+
+  
+}
+
+.footer-logo {
+  
+    min-width: 5rem;
+    max-width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    filter: $filter-white;
+
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+  .column {
+      display: flex;
+
+  }
+}
+
+.col-2{
+  flex: 50%;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playhouses</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/sass/main.css">
+</head>
+
+<body id="contact">
+    <header class="main-header">
+
+        <div class="container grid">
+
+            <div class="logo"> <a href="index.html"> <img src="assets/images/logo.svg" alt="Playhouses logo"></a></div>
+
+            <nav class="main-nav">
+                <ul class="unstyled-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====contact== -->
+
+    <div class="container">
+
+        <h2 class="contact">Give us a call at <a href="tel:+353873711042">087 3711042</a> </h2>
+        <h2 class="contact">Or send us an email at <a href="mailto:conneelydave@hotmail.com"> conneelydave@hotmail.com
+            </a> </h2>
+
+        <div class=" fcf-body">
+
+            <div id="fcf-form">
+                <h3 class="fcf-h3">Contact us</h3>
+
+                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+
+                    <div class="fcf-form-group">
+                        <label for="Name" class="fcf-label">Your name</label>
+                        <div class="fcf-input-group">
+                            <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Email" class="fcf-label">Your email address</label>
+                        <div class="fcf-input-group">
+                            <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <button type="submit" id="fcf-button"
+                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send
+                            Message</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--=======Footer========-->
+
+    <footer>
+        <div class="container container-footer">
+            <div class="footer-logo"><img src="assets/images/logo.svg" alt="Dave Conneely Construction Logo">
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-text">
+            <p>Copyright © Dave Conneely 2022. All Rights Reserved.</p>
+            <p>Created by <a href="https://westatlanticdesign.ie">West Atlantic Design</a> </p>
+        </div>
+    </footer>
+
+
+    <!--=======Javascript========-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
