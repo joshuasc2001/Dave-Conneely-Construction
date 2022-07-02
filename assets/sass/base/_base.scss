@@ -39,6 +39,13 @@ img{
 
   
 }
+#dark {
+
+  .logo {
+      filter: $filter-dark;
+  }
+
+}
 
 .footer-logo {
   

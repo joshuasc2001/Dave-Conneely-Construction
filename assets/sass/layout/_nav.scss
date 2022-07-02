@@ -163,3 +163,31 @@
 .hamburger.is-open::before {
     opacity: 0;
 }
+
+#dark {
+
+    font-family: $font-stack;
+
+    .main-nav {
+        a {
+            @media (min-width: 768px) {
+                color: $font-main;
+            }
+        }
+    }
+
+    .main-header {
+        position: relative;
+    }
+
+    
+
+    .hamburger,
+        .hamburger::before,
+        .hamburger::after {
+            background-color: $dark;
+        }
+
+    
+
+}

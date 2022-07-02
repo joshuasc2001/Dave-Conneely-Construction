@@ -1,0 +1,26 @@
+
+
+.gallery-container{
+
+    padding-top: 1rem ;
+    padding-bottom: 1rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.gallery-container img{
+    
+    max-width: 90%;
+    padding: 1rem;
+    border-radius: 30px;
+
+}
+
+.gallery-container img:first-of-type{
+        
+    padding-top: 10px;
+}
