@@ -1,6 +1,26 @@
-$main:#9BC1BC;
-$secondary:#F4F1BB;
-$tertiary:#ED6A5A;
+$yellow: rgb(255, 159, 26);
+$pink: rgb(255, 65, 103);
+$orange: rgb(221, 91, 54);
+$orange-2: rgb(213, 138, 72);
+$grey: rgb(23, 23, 23);
+$grey-2: rgb(13, 13, 13);
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$blue: rgb(68, 68, 113);
+$blue-2: rgb(53, 91, 141);
+$red: rgb(230, 57, 70);
+$red-2: rgb(197, 44, 57);
+
+
+$primary: $blue-2;
+$secondary: $red;
+$background: $white;
+
+
+//legacy
+$main:$primary;
+$secondary:$secondary;
+$tertiary: $red-2;
 
 $dark: #484848;
 $light: #ffffff;

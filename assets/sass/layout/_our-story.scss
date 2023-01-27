@@ -3,6 +3,10 @@
     background-color: $main;
     padding-top: 4rem;
     padding-bottom: 4rem;
+    h2, p{
+       color: $white; 
+    }
+    
 }
 
 .body-link {

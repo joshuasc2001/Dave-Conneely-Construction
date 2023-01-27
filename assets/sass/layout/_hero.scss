@@ -1,17 +1,31 @@
 .hero {
+  background-size: cover;
+  padding-top: 17.5rem;
+  padding-bottom: 10rem;
+  text-align: left;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  background: url('../images/hero.jpg') no-repeat center center fixed;
+  background-attachment: scroll;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 
-    background: url("../images/hero.webp") no-repeat center center fixed;
-    background-size: cover;
-    padding-top: 9em;
-    padding-bottom: 9em;
-    text-align: center;
-    
+  h1{
+    color: $light;
+    max-width: 700px;
+}
 
-    h1{
-        color: $light;
-        max-width: 800px;
-        margin-left: auto ;
-        margin-right: auto ;
+  @media (min-width: 768px) {
+    padding-top: 30rem;
+    padding-bottom: 25rem;
+
+    h1 {
+      font-size: 3.7rem;
     }
 
+    h2 {
+      font-size: 3rem;
+    }
+  }
 }

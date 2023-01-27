@@ -1,18 +1,21 @@
 .main-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: $background;
+
+  @media screen and (min-width: 768px) {
     padding-top: 1em;
-    padding-bottom: 3em;
-
-    @media screen and (min-width: 768px) {
-        padding-top: 1em;
-        padding-bottom: 2em;
-    }
-
+    padding-bottom: 1em;
+  }
 }
 
-
-
-
+.header-logo {
+  padding: 0.5rem;
+  margin: 0.75rem;
+  width: 200px;
+  float: left;
+}
